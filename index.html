@@ -1,28 +1,28 @@
 <!doctype html>
-<html lang="en">
+<html lang='en'>
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
     <title>Am I still just a rat in cage?</title>
-    <meta name="title" content="Am I still just a rat in cage?" />
-    <meta name="description" content="Find out if you are still just a rat in a cage. Free while supplies last!" />
+    <meta name='title' content='Am I still just a rat in cage?' />
+    <meta name='description' content='Find out if you are still just a rat in a cage. Free while supplies last!' />
 
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://despiteallmyrage.amistilljustaratinacage.net" />
-    <meta property="og:title" content="Am I still just a rat in cage?" />
-    <meta property="og:description"
-        content="Find out if you are still just a rat in a cage. Free while supplies last!" />
+    <meta property='og:type' content='website' />
+    <meta property='og:url' content='https://despiteallmyrage.amistilljustaratinacage.net' />
+    <meta property='og:title' content='Am I still just a rat in cage?' />
+    <meta property='og:description'
+        content='Find out if you are still just a rat in a cage. Free while supplies last!' />
 
 
-    <meta property="twitter:card" content="summary" />
-    <meta property="twitter:url" content="https://despiteallmyrage.amistilljustaratinacage.net" />
-    <meta property="twitter:title" content="Am I still just a rat in cage?" />
-    <meta property="twitter:description"
-        content="Find out if you are still just a rat in a cage. Free while supplies last!" />
+    <meta property='twitter:card' content='summary' />
+    <meta property='twitter:url' content='https://despiteallmyrage.amistilljustaratinacage.net' />
+    <meta property='twitter:title' content='Am I still just a rat in cage?' />
+    <meta property='twitter:description'
+        content='Find out if you are still just a rat in a cage. Free while supplies last!' />
 
-    <link rel="icon"
-        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐀</text></svg>">
+    <link rel='icon'
+        href='data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐀</text></svg>'>
     <style>
         html,
         body {
@@ -35,19 +35,35 @@
         html {
             background: #000;
             color: red;
-            font-size: 24px;
         }
 
         body {
             display: flex;
             align-items: center;
             justify-content: center;
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden;
+        }
+
+        h1 {
+            cursor: help;
+            user-select: none;
+            font-size: 48px;
+            transition: font-size .1s;
         }
     </style>
 </head>
 
 <body>
     <h1>YES</h1>
+    <script>
+        let fs = 48
+        document.querySelector('h1').addEventListener('click', event => {
+            fs *= 1.2
+            event.target.style.fontSize = `${fs}px`
+        })
+    </script>
 </body>
 
 </html>
